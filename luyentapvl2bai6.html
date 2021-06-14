@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ve Trai tim</title>
+</head>
+<body>
+<script>
+    ketqua= ""
+  for (i=1;i<=7;i++){
+    for (j=1;j<=7;j++){
+        if (i==1){
+            if (j==2||j==3||j==5||j==6){ketqua+= "*"} else { ketqua+="&nbsp&nbsp&nbsp"};
+        }
+        if (i==2){
+            if (j==1||j==4||j==7){ketqua+= "*" } else { ketqua+="&nbsp&nbsp&nbsp"};
+        }
+        if (i==3||i==4){
+            if (j==1||j==7){ ketqua+= "*" } else { ketqua+="&nbsp&nbsp&nbsp"};
+        }
+        if (i==5){
+            if (j==2||j==6){ ketqua+= "*" } else { ketqua+="&nbsp&nbsp&nbsp"};
+        }
+        if (i==6){
+            if (j==3||j==5){ ketqua+= "*" } else { ketqua+="&nbsp&nbsp&nbsp"};
+        }
+        if (i==7){
+            if (j==4){ ketqua+= "*" } else { ketqua+="&nbsp&nbsp&nbsp"};
+        }
+    }ketqua+="<br>";
+  } document.write(ketqua)
+</script>
+</body>
+</html>
