@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let ketqua=""
+  for (i=1;i<=10;i++){
+    for (j=1;j<=10;j++){
+      if (i==1 ||i==10){
+        ketqua+="*";
+      }else {
+        if(j==1 ||j==10){
+          ketqua+="*";
+        } else{
+          ketqua+="&nbsp&nbsp";
+        }
+      }
+    } ketqua+="<br>";
+  }
+  document.write(ketqua);
+</script>
+</body>
+</html>

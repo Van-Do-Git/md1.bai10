@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In day fibolaci</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap vao so luong so fibonaci ban muon hien thi");
+    let ketqua = "1;1;";
+    let dem= 2;
+    let a = 1;
+    let b = 1;
+    let c;
+    while(dem<n){
+        c= a +b;
+        a = b;
+        b = c;
+        dem+=1;
+        ketqua+=c+";"
+    }
+    document.write(ketqua);
+</script>
+</body>
+</html>

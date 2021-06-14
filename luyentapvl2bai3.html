@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ve tam gia vuong</title>
+</head>
+<body>
+<script>
+  let ketqua=""
+  for (i=1;i<6;i++){
+    for (j=1; j<=i; j++){
+      ketqua+="*";
+    }ketqua+="<br>"
+  }
+  document.write(ketqua +"<br>");
+
+  let ketqua2=""
+  for (i=5;i>=1;i--){
+    for (j=1; j<=i; j++){
+      ketqua2+="*";
+    }ketqua2+="<br>"
+  }
+  document.write(ketqua2);
+
+  let ketqua3=""
+  for (i=6;i>1;i--) {
+    for (j = 6; j > 1; j--) {
+      if (j<=i){
+      ketqua3 += "*";}else {
+        ketqua3+= "&nbsp&nbsp";
+      }
+    }
+    ketqua3+="<br>"
+  }
+  document.write(ketqua3 +"<br>");
+
+  let ketqua4=""
+  for (i=6;i>=1;i--) {
+    for (j = 1; j <= 6; j++) {
+      if (j<=i){
+        ketqua4 += "&nbsp&nbsp";}else {
+        ketqua4+= "*";
+      }
+    }
+    ketqua4+="<br>"
+  }
+  document.write(ketqua4 +"<br>");
+</script>
+</body>
+</html>
